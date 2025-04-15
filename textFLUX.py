@@ -6,11 +6,6 @@ from PIL import Image
 from io import BytesIO
 
 
-# Create output directory if it doesn't exist
-if not os.path.exists('generated_images_products_flux'):
-    os.makedirs('generated_images_products_flux')
-
-
 def create_direct_prompt(product):
     """Create a standardized prompt for consistent product photography"""
     name = product['name']
@@ -70,7 +65,7 @@ def generate_image_with_flux(prompt, index, product_name):
         clean_name = clean_name.replace(' ', '_')
        
         # Save the image with higher quality compression
-        filename = f"generated_images_products_flux/{index:03d}_{clean_name}.jpg"
+        filename = f"generated_images_products/{index:03d}_{clean_name}.jpg"
         image.save(filename, 'JPEG',
                   quality=70,  # Significantly increased quality
                   optimize=True)
@@ -84,27 +79,78 @@ def generate_image_with_flux(prompt, index, product_name):
     sleep(1)
 
 
+def duplicate_existing_image(index, product_name):
+    try:
+        # Get list of existing images
+        existing_images = os.listdir('generated_images_products')
+        
+        if not existing_images:
+            print("No existing images found to duplicate")
+            return False
+        
+        # Pick the first image to duplicate
+        source_image_path = os.path.join('generated_images_products', existing_images[0])
+        
+        # Clean meal name for filename
+        clean_name = "".join(c for c in product_name if c.isalnum() or c in (' ', '-')).strip()
+        clean_name = clean_name.replace(' ', '_')
+        
+        # Create destination path
+        dest_image_path = f"generated_images_products/{index:03d}_{clean_name}.jpg"
+        
+        # Open and save the image (creates a copy)
+        image = Image.open(source_image_path)
+        image.save(dest_image_path)
+        
+        print(f"Successfully duplicated image for {product_name}")
+        return True
+        
+    except Exception as e:
+        print(f"Error duplicating image for {product_name}: {str(e)}")
+        return False
+
+
 # Load products from JSON file
 try:
     with open('myProductList.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
-        products = data['productlist']  # Changed from 'meals' to 'productlist'
+        products = data['productlist']
 except Exception as e:
     print(f"Error loading JSON file: {str(e)}")
     exit(1)
 
+# Create output directory if it doesn't exist
+if not os.path.exists('generated_images_products'):
+    os.makedirs('generated_images_products')
 
 # Process each product
 for index, product in enumerate(products, 1):
-    # Skip products before index 220
-    if index < 0:
-        continue
-        
-    print(f"\nProcessing product {index}/{len(products)}: {product['name']}")
+    product_name = product['name']
     
-    # Create prompt directly and generate image
-    prompt = create_direct_prompt(product)
-    print(f"Using prompt: {prompt}")
-    generate_image_with_flux(prompt, index, product['name'])
+    # Clean product name for filename
+    clean_name = "".join(c for c in product_name if c.isalnum() or c in (' ', '-')).strip()
+    clean_name = clean_name.replace(' ', '_')
+    
+    # Create the correct filename
+    filename = f"generated_images_products/{index:03d}_{clean_name}.jpg"
+    
+    # Also check if image exists in the original folder
+    original_folder_filename = f"generated_images_products/{index:03d}_{clean_name}.jpg"
+    
+    # Check if the file exists in either location
+    if os.path.exists(filename):
+        print(f"Image exists for {product_name}: {filename}")
+    elif os.path.exists(original_folder_filename):
+        # Copy from original folder to flux folder
+        try:
+            image = Image.open(original_folder_filename)
+            image.save(filename)
+            print(f"Copied image from original folder for {product_name}")
+        except Exception as e:
+            print(f"Error copying image from original folder: {str(e)}")
+            duplicate_existing_image(index, product_name)
+    else:
+        print(f"Missing image for {product_name}, will duplicate an existing image")
+        duplicate_existing_image(index, product_name)
     
     print(f"Progress: {index}/{len(products)}")
