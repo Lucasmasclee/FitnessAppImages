@@ -1,5 +1,6 @@
 import os
 import json
+import shutil
 
 def get_missing_files_by_directory():
     """Return a dictionary of missing files for each directory"""
@@ -77,7 +78,7 @@ def get_missing_files_by_directory():
     return missing_files
 
 def rename_image_files(directory):
-    """Rename image files to correct format based on product list"""
+    """Rename image files to correct format based on product list and replace content with first image"""
     try:
         # Get list of files in directory
         files = os.listdir(directory)
@@ -85,7 +86,19 @@ def rename_image_files(directory):
         # Filter for image files
         image_files = [f for f in files if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
         
+        # Find the first image to use as a replacement
+        first_image = None
+        for file in sorted(image_files):
+            if len(file) >= 3 and file[:3].isdigit():
+                first_image = os.path.join(directory, file)
+                break
+        
+        if not first_image:
+            print(f"No valid image found in {directory} to use as replacement")
+            return False
+        
         # Process each file
+        renamed_files = []
         for file in image_files:
             # Extract the index part (first 3 characters)
             if len(file) >= 3 and file[:3].isdigit():
@@ -105,8 +118,22 @@ def rename_image_files(directory):
                     if file != new_filename:
                         old_path = os.path.join(directory, file)
                         new_path = os.path.join(directory, new_filename)
+                        
+                        # First rename the file
                         os.rename(old_path, new_path)
                         print(f"Renamed: {file} → {new_filename}")
+                        
+                        # Add to list of renamed files
+                        renamed_files.append(new_path)
+        
+        # Replace content of renamed files with first image
+        for renamed_file in renamed_files:
+            try:
+                # Copy the content of the first image to the renamed file
+                shutil.copy2(first_image, renamed_file)
+                print(f"Replaced content of {os.path.basename(renamed_file)} with content from {os.path.basename(first_image)}")
+            except Exception as e:
+                print(f"Error replacing content of {os.path.basename(renamed_file)}: {str(e)}")
         
         print(f"Finished renaming files in {directory}")
         return True
@@ -127,6 +154,13 @@ def create_missing_files(directory, missing_files):
         if os.path.exists(directory):
             existing_files = [f for f in os.listdir(directory) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
         
+        # Find the first image to use as a template
+        template_image = None
+        for file in sorted(existing_files):
+            if len(file) >= 3 and file[:3].isdigit():
+                template_image = os.path.join(directory, file)
+                break
+        
         # Extract indices of missing files
         missing_indices = [file[:3] for file in missing_files]
         
@@ -142,10 +176,15 @@ def create_missing_files(directory, missing_files):
         for filename in missing_files:
             file_path = os.path.join(directory, filename)
             if not os.path.exists(file_path):
-                # Create an empty file as a placeholder
-                with open(file_path, 'w') as f:
-                    f.write("Placeholder for missing image")
-                print(f"Created placeholder for: {filename} in {directory}")
+                if template_image and os.path.exists(template_image):
+                    # Copy the template image to create the missing file
+                    shutil.copy2(template_image, file_path)
+                    print(f"Created placeholder for: {filename} in {directory} using template image")
+                else:
+                    # Create an empty file as a placeholder if no template is available
+                    with open(file_path, 'w') as f:
+                        f.write("Placeholder for missing image")
+                    print(f"Created placeholder for: {filename} in {directory} (text placeholder)")
         
         return True
     except Exception as e:
