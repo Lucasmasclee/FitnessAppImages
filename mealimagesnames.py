@@ -1,6 +1,7 @@
 import os
 import json
 import shutil
+from collections import defaultdict
 
 def get_missing_files_by_directory():
     """Return a dictionary of missing files for each directory"""
@@ -77,9 +78,38 @@ def get_missing_files_by_directory():
     }
     return missing_files
 
+def get_meal_name_mappings():
+    """Get mappings between original meal names and shortened versions"""
+    # Original to shortened meal name mappings
+    name_mappings = {
+        "Chicken Lettuce Wraps with Rice Cakes": "chicken lettuce wraps",
+        "Tempeh Lettuce Wraps with Rice Cakes": "Tempeh Lettuce Wraps",
+        "Cheese-Hummus Rice Cakes": "Hummus Rice Cakes",
+        "Raspberry Smoothie Bowl": "Raspberry Bowl",
+        "Raspberry Protein Shake": "Raspberry Shake",
+        "Berry Protein Smoothie": "Berry Smoothie",
+        "Almond Banana Pancakes": "Banana Pancakes",
+        "Strawberry Ice Cream": "Berry Ice Cream",
+        "Tomato Lentils Pasta": "Lentils Pasta",
+        "Overnight Oats Bowl": "Overnight Oats"
+    }
+    
+    # Create reverse mapping for filename matching
+    filename_mappings = {}
+    for old_name, new_name in name_mappings.items():
+        # Convert to filename format (replace spaces with underscores)
+        old_filename = old_name.replace(' ', '_')
+        new_filename = new_name.replace(' ', '_')
+        filename_mappings[old_filename] = new_filename
+    
+    return name_mappings, filename_mappings
+
 def rename_image_files(directory):
     """Rename image files to correct format based on product list and replace content with first image"""
     try:
+        # Get name mappings
+        _, filename_mappings = get_meal_name_mappings()
+        
         # Get list of files in directory
         files = os.listdir(directory)
         
@@ -108,11 +138,25 @@ def rename_image_files(directory):
                 if '_' in file[3:]:
                     name_part = file[file.index('_')+1:]
                     
-                    # Clean the name part
-                    clean_name = "".join(c for c in name_part if c.isalnum() or c in (' ', '-', '_', '.')).strip()
+                    # Check if this name needs to be updated based on our mappings
+                    name_without_ext, ext = os.path.splitext(name_part)
                     
-                    # Create new filename
-                    new_filename = f"{index}_{clean_name}"
+                    # Try to find a match in our mappings
+                    matched = False
+                    for old_name, new_name in filename_mappings.items():
+                        if old_name.lower() in name_without_ext.lower():
+                            # Create new filename with the shortened name
+                            clean_name = new_name + ext
+                            new_filename = f"{index}_{clean_name}"
+                            matched = True
+                            break
+                    
+                    # If no match found, just clean the existing name
+                    if not matched:
+                        # Clean the name part
+                        clean_name = "".join(c for c in name_part if c.isalnum() or c in (' ', '-', '_', '.')).strip()
+                        # Create new filename
+                        new_filename = f"{index}_{clean_name}"
                     
                     # Rename only if the filename would change
                     if file != new_filename:
@@ -213,6 +257,90 @@ def process_all_image_directories():
         if directory not in base_dirs and missing_files_dict[directory]:
             print(f"Creating missing directory: {directory}")
             create_missing_files(directory, missing_files_dict[directory])
+
+def shorten_longest_meal_names():
+    """
+    Find the 10 meals with the longest names across all JSON files and replace them
+    with shorter versions in all JSON files where they appear.
+    """
+    # Dictionary to store meal name -> length
+    meal_name_lengths = {}
+    # Dictionary to store meal name -> list of JSON files
+    meal_json_files = defaultdict(list)
+    
+    # List all JSON files in the current directory
+    json_files = [f for f in os.listdir('.') if f.endswith('.json')]
+    
+    print("Scanning JSON files for meal names...")
+    
+    # Process each JSON file to find the longest meal names
+    for json_file in json_files:
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if 'meals' in data:
+                    for meal in data['meals']:
+                        meal_name = meal['name']
+                        # Store the meal name and its length
+                        meal_name_lengths[meal_name] = len(meal_name)
+                        # Store which JSON file contains this meal
+                        if json_file not in meal_json_files[meal_name]:
+                            meal_json_files[meal_name].append(json_file)
+        except Exception as e:
+            print(f"Error processing {json_file}: {str(e)}")
+    
+    # Sort meals by name length (descending) and take the top 10
+    longest_meals = sorted(meal_name_lengths.items(), key=lambda x: x[1], reverse=True)[:10]
+    
+    # Create a mapping of old names to new names
+    name_replacements = {
+        longest_meals[0][0]: "chicken lettuce wraps",
+        longest_meals[1][0]: "Tempeh Lettuce Wraps",
+        longest_meals[2][0]: "Hummus Rice Cakes",
+        longest_meals[3][0]: "Raspberry Bowl",
+        longest_meals[4][0]: "Raspberry Shake",
+        longest_meals[5][0]: "Berry Smoothie",
+        longest_meals[6][0]: "Banana Pancakes",
+        longest_meals[7][0]: "Berry Ice Cream",
+        longest_meals[8][0]: "Lentils Pasta",
+        longest_meals[9][0]: "Overnight Oats"
+    }
+    
+    # Print the replacements that will be made
+    print("\n===== Meal Name Replacements =====")
+    for old_name, new_name in name_replacements.items():
+        print(f"'{old_name}' -> '{new_name}'")
+    
+    # Now update each JSON file with the new names
+    files_updated = 0
+    meals_updated = 0
+    
+    for json_file in json_files:
+        file_updated = False
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                
+            if 'meals' in data:
+                for meal in data['meals']:
+                    old_name = meal['name']
+                    if old_name in name_replacements:
+                        meal['name'] = name_replacements[old_name]
+                        meals_updated += 1
+                        file_updated = True
+            
+            if file_updated:
+                # Write the updated data back to the file
+                with open(json_file, 'w', encoding='utf-8') as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+                files_updated += 1
+                print(f"Updated meal names in: {json_file}")
+                
+        except Exception as e:
+            print(f"Error updating {json_file}: {str(e)}")
+    
+    print(f"\nSummary: Updated {meals_updated} meal names across {files_updated} JSON files.")
+    return longest_meals, name_replacements
 
 # Main execution
 if __name__ == "__main__":
