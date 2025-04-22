@@ -216,7 +216,8 @@ def create_missing_files(directory, missing_files):
                 os.remove(file_path)
                 print(f"Removed incorrect file: {file} from {directory}")
         
-        # Create placeholder files for missing images
+        # Create placeholder files for missing images - commented out for now
+        """
         for filename in missing_files:
             file_path = os.path.join(directory, filename)
             if not os.path.exists(file_path):
@@ -229,6 +230,7 @@ def create_missing_files(directory, missing_files):
                     with open(file_path, 'w') as f:
                         f.write("Placeholder for missing image")
                     print(f"Created placeholder for: {filename} in {directory} (text placeholder)")
+        """
         
         return True
     except Exception as e:
