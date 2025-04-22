@@ -1,0 +1,258 @@
+{
+  "meals": [
+    {
+      "name": "Yogurt Parfait",
+      "ingredients": [
+        "Non-fat Greek Yogurt",
+        "Strawberry",
+        "Gluten-Free Granola"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add yogurt to a bowl\nLayer with strawberries\nTop with granola"
+    },
+    {
+      "name": "Banana Pancakes",
+      "ingredients": [
+        "Gluten-Free Whole Grain Oat Flour",
+        "Banana",
+        "Egg"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Mix oat flour, banana, and eggs\nHeat a pan\nCook pancakes until golden"
+    },
+    {
+      "name": "Berry Smoothie",
+      "ingredients": [
+        "Protein Powder",
+        "Blueberries",
+        "Skim Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to a blender\nBlend until smooth\nServe cold"
+    },
+    {
+      "name": "Overnight Oats",
+      "ingredients": [
+        "Non-fat Yogurt",
+        "Protein Powder",
+        "Gluten-Free Whole Grain Oats"
+      ],
+      "preparation_time": "5 minutes (plus overnight)",
+      "cooking_instructions": "Mix all ingredients\nStore in a jar\nRefrigerate overnight"
+    },
+    {
+      "name": "Smoothie Bowl",
+      "ingredients": [
+        "Blueberries",
+        "Skim Milk",
+        "Protein Powder"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Blend all ingredients\nPour into a bowl\nAdd toppings if desired"
+    },
+    {
+      "name": "Spicy Tofu Salad",
+      "ingredients": [
+        "Tofu",
+        "Lettuce",
+        "Rice Cakes"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Crisp the tofu in a pan\nAdd lettuce to a bowl\nTop with tofu and serve with rice cakes"
+    },
+    {
+      "name": "Edamame Rice Cakes",
+      "ingredients": [
+        "Edamame",
+        "Rice Cakes",
+        "Lettuce"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Steam or thaw edamame\nTop rice cakes with lettuce\nAdd edamame on top"
+    },
+    {
+      "name": "Mango Yoghurt",
+      "ingredients": [
+        "Mango",
+        "Gluten-Free Granola",
+        "Non-fat Greek Yogurt"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Peel and dice mango\nMix with yogurt\nTop with granola"
+    },
+    {
+      "name": "Protein Waffles",
+      "ingredients": [
+        "Protein Powder",
+        "Gluten-Free Whole Grain Oat Flour",
+        "Skim Milk"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Mix ingredients\nPour into waffle maker\nCook until crisp"
+    },
+    {
+      "name": "Lentil Bolognese",
+      "ingredients": [
+        "Fat-Free Cottage Cheese",
+        "Lentil Pasta",
+        "Pasta"
+      ],
+      "preparation_time": "25 minutes",
+      "cooking_instructions": "Cook pasta\nSimmer lentils with tomato paste\nCombine and stir well"
+    },
+    {
+      "name": "Tempeh Lettuce Wraps",
+      "ingredients": [
+        "Tempeh",
+        "Romaine Lettuce Leaves",
+        "Rice Cakes"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Sauté tempeh with spices\nSpoon into lettuce leaves\nServe with rice cakes"
+    },
+    {
+      "name": "Pear Yoghurt",
+      "ingredients": [
+        "Non-fat Greek Yogurt",
+        "Pear",
+        "Gluten-Free Granola"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Dice pear\nMix with yogurt\nSprinkle granola on top"
+    },
+    {
+      "name": "Banana Smoothie",
+      "ingredients": [
+        "Protein Powder",
+        "Banana",
+        "Gluten-Free Whole Grain Oats"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth"
+    },
+    {
+      "name": "Protein Bar",
+      "ingredients": [
+        "Protein Powder",
+        "Banana",
+        "Gluten-Free Whole Grain Oats"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Mix ingredients\nShape into bars\nChill in fridge"
+    },
+    {
+      "name": "Cottage Cheese Bowl",
+      "ingredients": [
+        "Cottage Cheese",
+        "Mixed Berries",
+        "Gluten-Free Oats"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add cottage cheese to bowl\nTop with berries and oats"
+    },
+    {
+      "name": "Hummus Rice Cakes",
+      "ingredients": [
+        "Hummus",
+        "Rice Cakes",
+        "Cucumber",
+        "Fat-Free Cottage Cheese"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Spread hummus on rice cakes\nAdd cucumber\nAdd cottage cheese and serve"
+    },
+    {
+      "name": "Veggie Mexican Bowl",
+      "ingredients": [
+        "White Rice",
+        "Black Beans",
+        "Guacamole",
+        "Cottage Cheese"
+      ],
+      "preparation_time": "20 minutes",
+      "cooking_instructions": "Cook rice\nHeat black beans\nAssemble bowl with guacamole on top"
+    },
+    {
+      "name": "Tofu Poke Bowl",
+      "ingredients": [
+        "Tofu",
+        "Whole Grain Rice",
+        "Cucumber",
+        "Avocado"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Cube and pan-sear tofu\nCook rice\nSlice cucumber and avocado\nLayer all in a bowl"
+    },
+    {
+      "name": "Potato Pizza Rounds",
+      "ingredients": [
+        "Potato",
+        "Cottage Cheese",
+        "Tomato Sauce",
+        "Olive Oil"
+      ],
+      "preparation_time": "20 minutes",
+      "cooking_instructions": "Slice the potato into circles and roast\nTop with sauce and cottage cheese\nLet it bake until the cheese is molten"
+    },
+    {
+      "name": "Tempeh Rice Bowl",
+      "ingredients": [
+        "White Rice",
+        "Chickpeas",
+        "Tempeh"
+      ],
+      "preparation_time": "20 minutes",
+      "cooking_instructions": "Cook white rice\nCook Tempeh\nRoast chickpeas\nAdd everything to a plate and serve"
+    },
+    {
+      "name": "Berries Yogurt",
+      "ingredients": [
+        "Non-fat Greek Yogurt",
+        "Mixed Berries",
+        "Gluten-Free Granola"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Combine yogurt and berries\nAdd granola on top"
+    },
+    {
+      "name": "Raspberry Bowl",
+      "ingredients": [
+        "Protein Powder",
+        "Skim Milk",
+        "Raspberries"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth/nAdd ice cubes and blend/nRepeat until preferred thickness"
+    },
+    {
+      "name": "Raspberry Shake",
+      "ingredients": [
+        "Protein Powder",
+        "Raspberries",
+        "Skim Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth"
+    },
+    {
+      "name": "Berry Ice Cream",
+      "ingredients": [
+        "Strawberry",
+        "Protein Powder",
+        "Skim Milk"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Freeze strawberries\nBlend with milk and protein powder until creamy"
+    },
+    {
+      "name": "Mug Cake",
+      "ingredients": [
+        "Protein Powder",
+        "Gluten-Free Whole Grain Oats",
+        "Skim Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Mix all in a mug\nMicrowave for 1-2 minutes\nLet cool slightly"
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "meals": [
+    {
+      "name": "Yogurt Parfait",
+      "ingredients": [
+        "Coconut Yogurt",
+        "Strawberry",
+        "Granola",
+        "Soy Protein Powder"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add yogurt to a bowl\nLayer with strawberries and granola\nMix in soy protein powder"
+    },
+    {
+      "name": "Protein Pancakes",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Banana",
+        "Whole Grain Flour"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Mix all ingredients\nHeat a pan\nPour batter and cook until golden"
+    },
+    {
+      "name": "Berry Smoothie",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Blueberries",
+        "Oat Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to a blender\nBlend until smooth\nServe cold"
+    },
+    {
+      "name": "Overnight Oats",
+      "ingredients": [
+        "Oat Milk",
+        "Soy Protein Powder",
+        "Whole Grain Oats"
+      ],
+      "preparation_time": "5 minutes (plus overnight)",
+      "cooking_instructions": "Mix all ingredients\nStore in a jar\nRefrigerate overnight"
+    },
+    {
+      "name": "Smoothie Bowl",
+      "ingredients": [
+        "Blueberries",
+        "Oat Milk",
+        "Soy Protein Powder"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Blend all ingredients\nPour into a bowl\nAdd toppings if desired"
+    },
+    {
+      "name": "Tofu Rice Cakes",
+      "ingredients": [
+        "Rice Cakes",
+        "Lettuce",
+        "Tofu"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Pan-fry tofu\nPlace lettuce and tofu on rice cakes\nServe"
+    },
+    {
+      "name": "Protein Bites",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Whole Grain Oat Flour",
+        "Peanut Butter",
+        "Oat Milk"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Mix all ingredients in a bowl\nRoll into balls\nChill in fridge"
+    },
+    {
+      "name": "Mango Yoghurt",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Mango",
+        "Oat Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Blend mango with oat milk and protein powder\nServe chilled"
+    },
+    {
+      "name": "Protein Waffles",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Whole Grain Oat Flour",
+        "Oat Milk"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Mix ingredients\nPour into waffle maker\nCook until crisp"
+    },
+    {
+      "name": "Lentils Pasta",
+      "ingredients": [
+        "Lentil Pasta",
+        "Tomato Sauce",
+        "Gluten Free Vegan Pasta"
+      ],
+      "preparation_time": "25 minutes",
+      "cooking_instructions": "Cook Vegan Pasta until al dente\nCook lentils pasta\nSeason crumbled tempeh\nBake Soy Beans and Tempeh\nCombine and serve"
+    },
+    {
+      "name": "Tofu Wrap",
+      "ingredients": [
+        "Tofu",
+        "Wrap",
+        "Lettuce"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Pan-fry tofu\nAdd tofu and lettuce to wrap\nRoll and serve"
+    },
+    {
+      "name": "Pear Yoghurt",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Pear",
+        "Oat Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Blend all ingredients or serve in layers\nStir before eating"
+    },
+    {
+      "name": "Banana Smoothie",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Banana",
+        "Whole Grain Oats"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth"
+    },
+    {
+      "name": "Protein Bar",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Banana",
+        "Whole Grain Oats"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Mix ingredients\nShape into bars\nChill in fridge"
+    },
+    {
+      "name": "Tofu Bowl",
+      "ingredients": [
+        "Tofu",
+        "Mixed Berries",
+        "Oats"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Crumble tofu into bowl\nAdd berries and oats on top"
+    },
+    {
+      "name": "Hummus Rice Cakes",
+      "ingredients": [
+        "Hummus",
+        "Edamame",
+        "Cucumber",
+        "Rice Cakes"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Spread hummus on rice cakes\nTop with cucumber slices and edamame"
+    },
+    {
+      "name": "Mexican Bowl",
+      "ingredients": [
+        "Black Beans",
+        "Tofu",
+        "White Rice",
+        "Guacamole"
+      ],
+      "preparation_time": "20 minutes",
+      "cooking_instructions": "Cook white rice\nSauté tofu\nAssemble with beans and guacamole"
+    },
+    {
+      "name": "Poke Bowl",
+      "ingredients": [
+        "Tofu",
+        "White Rice",
+        "Avocado",
+        "Cucumber"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Cook rice\nCube tofu and sauté or marinate\nSlice avocado and cucumber\nAssemble in bowl"
+    },
+    {
+      "name": "Pizza Rounds",
+      "ingredients": [
+        "Potato",
+        "Vegan Cheese",
+        "Tempeh",
+        "Tomato Sauce"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Slice potato into rounds\nBake potato rounds until golden brown\nSeason and bake tempeh\n\nAdd tomato sauceand vegan cheese to the potato\nAdd tempeh to the rounds and bake until cheese is molten"
+    },
+    {
+      "name": "Chicken & Rice",
+      "ingredients": [
+        "Tempeh",
+        "Cauliflower Rice",
+        "White Rice"
+      ],
+      "preparation_time": "20 minutes",
+      "cooking_instructions": "Cook white and cauliflower rice\nSauté tempeh\nCombine all and serve"
+    },
+    {
+      "name": "Berries Yogurt",
+      "ingredients": [
+        "Oat Milk",
+        "Soy Protein Powder",
+        "Mixed Berries",
+        "Granola"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Mix oat milk and soy protein powder\nAdd berries\nTop with granola"
+    },
+    {
+      "name": "Raspberry Bowl",
+      "ingredients": [
+        "Vegan Protein Powder",
+        "Oat Milk",
+        "Raspberries"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth/nAdd ice cubes and blend/nRepeat until preferred thickness"
+    },
+    {
+      "name": "Raspberry Shake",
+      "ingredients": [
+        "Vegan Protein Powder",
+        "Raspberries",
+        "Oat Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth"
+    },
+    {
+      "name": "Berry Ice Cream",
+      "ingredients": [
+        "Strawberry",
+        "Soy Protein Powder",
+        "Oat Milk"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Freeze strawberries\nBlend with milk and protein powder until creamy"
+    },
+    {
+      "name": "Mug Cake",
+      "ingredients": [
+        "Soy Protein Powder",
+        "Whole Grain Oats",
+        "Oat Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Mix all in a mug\nMicrowave for 1-2 minutes\nLet cool slightly"
+    }
+  ]
+}

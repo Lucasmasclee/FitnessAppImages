@@ -1,0 +1,259 @@
+{
+  "meals": [
+    {
+      "name": "Yogurt Parfait",
+      "ingredients": [
+        "Non-fat Greek Yogurt",
+        "Strawberry",
+        "Gluten-Free Granola"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add yogurt to a bowl\nLayer with strawberries\nTop with granola"
+    },
+    {
+      "name": "Banana Pancakes",
+      "ingredients": [
+        "Gluten-Free Whole Grain Oat Flour",
+        "Banana",
+        "Egg"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Mix oat flour, banana, and eggs\nHeat a pan\nCook pancakes until golden"
+    },
+    {
+      "name": "Berry Smoothie",
+      "ingredients": [
+        "Protein Powder",
+        "Blueberries",
+        "Skim Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to a blender\nBlend until smooth\nServe cold"
+    },
+    {
+      "name": "Overnight Oats",
+      "ingredients": [
+        "Non-fat Yogurt",
+        "Protein Powder",
+        "Gluten-Free Whole Grain Oats"
+      ],
+      "preparation_time": "5 minutes (plus overnight)",
+      "cooking_instructions": "Mix all ingredients\nStore in a jar\nRefrigerate overnight"
+    },
+    {
+      "name": "Smoothie Bowl",
+      "ingredients": [
+        "Blueberries",
+        "Skim Milk",
+        "Protein Powder"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Blend all ingredients\nPour into a bowl\nAdd toppings if desired"
+    },
+    {
+      "name": "Chicken Salad",
+      "ingredients": [
+        "Chicken",
+        "Lettuce",
+        "Bread"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Chop chicken\nMix with lettuce\nTop with salsa"
+    },
+    {
+      "name": "Tuna Rice Cakes",
+      "ingredients": [
+        "Tuna",
+        "Rice Cakes",
+        "Lettuce"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Place lettuce on rice cakes\nTop with tuna\nServe immediately"
+    },
+    {
+      "name": "Mango Yoghurt",
+      "ingredients": [
+        "Mango",
+        "Gluten-Free Granola",
+        "Non-fat Greek Yogurt"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Peel and dice mango\nMix with yogurt\nTop with granola"
+    },
+    {
+      "name": "Protein Waffles",
+      "ingredients": [
+        "Protein Powder",
+        "Gluten-Free Whole Grain Oat Flour",
+        "Skim Milk"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Mix ingredients\nPour into waffle maker\nCook until crisp"
+    },
+    {
+      "name": "Pasta Bolognese",
+      "ingredients": [
+        "Gluten-Free Pasta",
+        "Lean Ground Beef",
+        "Tomato Paste"
+      ],
+      "preparation_time": "25 minutes",
+      "cooking_instructions": "Cook pasta\nBrown beef\nStir in tomato paste\nCombine with pasta"
+    },
+    {
+      "name": "Chicken lettuce wraps",
+      "ingredients": [
+        "Chicken",
+        "Romaine Lettuce Leaves",
+        "Rice Cakes"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Grill and slice chicken\nFill lettuce leaves with chicken\nServe with rice cakes"
+    },
+    {
+      "name": "Pear Yoghurt",
+      "ingredients": [
+        "Non-fat Yogurt",
+        "Pear",
+        "Gluten-Free Granola"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Dice pear\nMix with yogurt\nSprinkle granola on top"
+    },
+    {
+      "name": "Banana Smoothie",
+      "ingredients": [
+        "Protein Powder",
+        "Banana",
+        "Gluten-Free Whole Grain Oats"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth"
+    },
+    {
+      "name": "Protein Bar",
+      "ingredients": [
+        "Protein Powder",
+        "Banana",
+        "Gluten-Free Whole Grain Oats"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Mix ingredients\nShape into bars\nChill in fridge"
+    },
+    {
+      "name": "Cottage Cheese Bowl",
+      "ingredients": [
+        "Cottage Cheese",
+        "Mixed Berries",
+        "Gluten-Free Oats"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add cottage cheese to bowl\nTop with berries and oats"
+    },
+    {
+      "name": "Turkey Rice Cakes",
+      "ingredients": [
+        "Rice Cakes",
+        "Cucumber",
+        "Turkey Breast"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Slice cucumber\nLayer turkey and cucumber on rice cakes"
+    },
+    {
+      "name": "Mexican Bowl",
+      "ingredients": [
+        "Chicken",
+        "White Rice",
+        "Guacamole",
+        "Black Beans"
+      ],
+      "preparation_time": "20 minutes",
+      "cooking_instructions": "Layer rice in bowl\nAdd chicken, beans, and guacamole"
+    },
+    {
+      "name": "Poke Bowl",
+      "ingredients": [
+        "Salmon",
+        "Whole Grain Rice",
+        "Cucumber",
+        "Avocado"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Cook rice\nDice salmon, cucumber, and avocado\nArrange in bowl"
+    },
+    {
+      "name": "Pizza Rounds",
+      "ingredients": [
+        "Potato",
+        "Fat-Free Cottage Cheese",
+        "Tomato Sauce",
+        "Olive Oil"
+      ],
+      "preparation_time": "15 minutes",
+      "cooking_instructions": "Add olive oil to a hot pan\nSlice potato into rounds\nBake potato rounds until golden brown\nAdd tomato sauce and cottage cheese to the potato\nBake until cheese is molten"
+    },
+    {
+      "name": "Chicken & Rice",
+      "ingredients": [
+        "Cauliflower Rice",
+        "Chicken",
+        "White Rice",
+        "Olive Oil"
+      ],
+      "preparation_time": "20 minutes",
+      "cooking_instructions": "Cook chicken\nPrepare cauliflower rice\nServe with rice cakes and olive oil"
+    },
+    {
+      "name": "Berries Yogurt",
+      "ingredients": [
+        "Non-fat Yogurt",
+        "Mixed Berries",
+        "Gluten-Free Granola"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Combine yogurt and berries\nAdd granola on top"
+    },
+    {
+      "name": "Strawberry Shake",
+      "ingredients": [
+        "Protein Powder",
+        "Skim Milk",
+        "Strawberry"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Mix all ingredients\nStir until doughy\nChill before eating"
+    },
+    {
+      "name": "Peanut Butter Shake",
+      "ingredients": [
+        "Protein Powder",
+        "Gluten Free Whole Grain Oats",
+        "Skim Milk",
+        "Peanut Butter"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth"
+    },
+    {
+      "name": "Berry Ice Cream",
+      "ingredients": [
+        "Strawberry",
+        "Protein Powder",
+        "Skim Milk"
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_instructions": "Freeze strawberries\nBlend with milk and protein powder until creamy"
+    },
+    {
+      "name": "Mug Cake",
+      "ingredients": [
+        "Protein Powder",
+        "Gluten-Free Whole Grain Oats",
+        "Skim Milk"
+      ],
+      "preparation_time": "5 minutes",
+      "cooking_instructions": "Mix all in a mug\nMicrowave for 1-2 minutes\nLet cool slightly"
+    }
+  ]
+}
