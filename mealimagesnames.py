@@ -6,74 +6,33 @@ from collections import defaultdict
 def get_missing_files_by_directory():
     """Return a dictionary of missing files for each directory"""
     missing_files = {
-        'images_maaltijdList - Dairy&GLuten-Free': [
-            '011_Chicken_Wrap.jpg',
-            '019_Pizza.jpg',
-            '022_Strawberry_Shake.jpg',
-            '023_Peanut_Butter_Shake.jpg'
-        ],
-        'images_maaltijdList - Dairy-Free': [
-            '006_Chicken_Salad.jpg',
-            '022_Strawberry_Shake.jpg',
-            '023_Peanut_Butter_Shake.jpg'
-        ],
-        'images_maaltijdList - Gluten-Free': [
-            '006_Chicken_Salad.jpg',
-            '019_Pizza_Rounds.jpg',
-            '022_Strawberry_Shake.jpg',
-            '023_Peanut_Butter_Shake.jpg'
-        ],
         'images_maaltijdList - Vegan&Gluten-Free': [
-            '002_Almond_Banana_Pancakes.jpg',
-            '006_Spicy_Tofu_Salad.jpg',
-            '007_Edamame_Rice_Cakes.jpg',
-            '010_Tomato_Lentils_Pasta.jpg',
-            '011_Tempeh_Lettuce_Wraps_with_Rice_Cakes.jpg',
-            '015_Cottage_Cheese_Bowl.jpg',
-            '016_Hummus_Rice_Cakes.jpg',
-            '018_Tofu_Poke_Bowl.jpg',
-            '019_Pizza_Rounds.jpg',
-            '022_Raspberry_Smoothie_Bowl.jpg',
-            '023_Raspberry_Protein_Shake.jpg'
+            '002_Banana_Pancakes.jpg',
+            '010_Lentils_Pasta.jpg',
+            '011_Tempeh_Lettuce_Wraps.jpg',
+            '022_Raspberry_Bowl.jpg',
+            '023_Raspberry_Shake.jpg'
         ],
         'images_maaltijdList - Vegan': [
-            '010_Tomato_Lentils_Pasta.jpg',
-            '016_Hummus_Rice_Cakes.jpg',
-            '019_Pizza_Rounds.jpg',
-            '022_Raspberry_Smoothie_Bowl.jpg',
-            '023_Raspberry_Protein_Shake.jpg'
+            '010_Lentils_Pasta.jpg',
+            '022_Raspberry_Bowl.jpg',
+            '023_Raspberry_Shake.jpg'
         ],
         'images_maaltijdList - Vegetar,Dairy,Gluten': [
-            '016_Cheese-Hummus_Rice_Cakes.jpg',
-            '019_Potato_Pizza_Rounds.jpg',
-            '020_Tempeh_Rice_Bowl.jpg',
-            '022_Raspberry_Smoothie_Bowl.jpg',
-            '023_Raspberry_Protein_Shake.jpg'
+            '022_Raspberry_Bowl.jpg',
+            '023_Raspberry_Shake.jpg'
         ],
         'images_maaltijdList - Vegetarian&Dairy-Free': [
-            '016_Cheese-Hummus_Rice_Cakes.jpg',
-            '019_Potato_Pizza_Rounds.jpg',
-            '020_Tempeh_Rice_Bowl.jpg',
-            '022_Raspberry_Smoothie_Bowl.jpg',
-            '023_Raspberry_Protein_Shake.jpg'
+            '022_Raspberry_Bowl.jpg',
+            '023_Raspberry_Shake.jpg'
         ],
         'images_maaltijdList - Vegetarian&Gluten-Free': [
-            '016_Cheese-Hummus_Rice_Cakes.jpg',
-            '019_Potato_Pizza_Rounds.jpg',
-            '020_Tempeh_Rice_Bowl.jpg',
-            '022_Raspberry_Smoothie_Bowl.jpg',
-            '023_Raspberry_Protein_Shake.jpg'
+            '022_Raspberry_Bowl.jpg',
+            '023_Raspberry_Shake.jpg'
         ],
         'images_maaltijdList - Vegetarian': [
-            '016_Cheese-Hummus_Rice_Cakes.jpg',
-            '019_Potato_Pizza_Rounds.jpg',
-            '020_Tempeh_Rice_Bowl.jpg',
-            '022_Raspberry_Smoothie_Bowl.jpg',
-            '023_Raspberry_Protein_Shake.jpg'
-        ],
-        'images_maaltijdList': [
-            '022_Strawberry_Shake.jpg',
-            '023_Peanut_Butter_Shake.jpg'
+            '022_Raspberry_Bowl.jpg',
+            '023_Raspberry_Shake.jpg'
         ]
     }
     return missing_files
@@ -216,8 +175,7 @@ def create_missing_files(directory, missing_files):
                 os.remove(file_path)
                 print(f"Removed incorrect file: {file} from {directory}")
         
-        # Create placeholder files for missing images - commented out for now
-        """
+        # Create placeholder files for missing images
         for filename in missing_files:
             file_path = os.path.join(directory, filename)
             if not os.path.exists(file_path):
@@ -230,7 +188,6 @@ def create_missing_files(directory, missing_files):
                     with open(file_path, 'w') as f:
                         f.write("Placeholder for missing image")
                     print(f"Created placeholder for: {filename} in {directory} (text placeholder)")
-        """
         
         return True
     except Exception as e:
