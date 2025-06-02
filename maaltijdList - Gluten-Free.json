@@ -55,20 +55,22 @@
       "ingredients": [
         "Chicken",
         "Lettuce",
-        "Bread"
+        "Bread",
+        "Celery"
       ],
       "preparation_time": "10 minutes",
-      "cooking_instructions": "Chop chicken\nMix with lettuce\nTop with salsa"
+      "cooking_instructions": "Chop chicken and celery\nMix with lettuce\nTop with salsa"
     },
     {
       "name": "Tuna Rice Cakes",
       "ingredients": [
         "Tuna",
         "Rice Cakes",
-        "Lettuce"
+        "Lettuce",
+        "Radish"
       ],
       "preparation_time": "5 minutes",
-      "cooking_instructions": "Place lettuce on rice cakes\nTop with tuna\nServe immediately"
+      "cooking_instructions": "Place lettuce and sliced radish on rice cakes\nTop with tuna\nServe immediately"
     },
     {
       "name": "Mango Yoghurt",
@@ -105,10 +107,11 @@
       "ingredients": [
         "Chicken",
         "Romaine Lettuce Leaves",
-        "Rice Cakes"
+        "Rice Cakes",
+        "Bell Pepper"
       ],
       "preparation_time": "10 minutes",
-      "cooking_instructions": "Grill and slice chicken\nFill lettuce leaves with chicken\nServe with rice cakes"
+      "cooking_instructions": "Grill and slice chicken and bell pepper\nFill lettuce leaves with chicken and bell pepper\nServe with rice cakes"
     },
     {
       "name": "Pear Yoghurt",
@@ -155,10 +158,11 @@
       "ingredients": [
         "Rice Cakes",
         "Cucumber",
-        "Turkey Breast"
+        "Turkey Breast",
+        "Spinach"
       ],
       "preparation_time": "5 minutes",
-      "cooking_instructions": "Slice cucumber\nLayer turkey and cucumber on rice cakes"
+      "cooking_instructions": "Slice cucumber\nLayer turkey, cucumber, and spinach on rice cakes"
     },
     {
       "name": "Mexican Bowl",
@@ -177,10 +181,11 @@
         "Salmon",
         "Whole Grain Rice",
         "Cucumber",
-        "Avocado"
+        "Avocado",
+        "Zucchini"
       ],
       "preparation_time": "15 minutes",
-      "cooking_instructions": "Cook rice\nDice salmon, cucumber, and avocado\nArrange in bowl"
+      "cooking_instructions": "Cook rice\nDice salmon, cucumber, avocado, and zucchini\nArrange in bowl"
     },
     {
       "name": "Pizza Rounds",

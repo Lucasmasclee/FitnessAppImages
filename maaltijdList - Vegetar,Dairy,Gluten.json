@@ -55,20 +55,22 @@
       "ingredients": [
         "Tofu",
         "Lettuce",
-        "Rice Cakes"
+        "Rice Cakes",
+        "Carrot"
       ],
       "preparation_time": "10 minutes",
-      "cooking_instructions": "Crisp the tofu in a pan\nAdd lettuce to a bowl\nTop with tofu and serve with rice cakes"
+      "cooking_instructions": "Crisp the tofu in a pan\nAdd lettuce and grated carrot to a bowl\nTop with tofu and serve with rice cakes"
     },
     {
       "name": "Edamame Rice Cakes",
       "ingredients": [
         "Edamame",
         "Rice Cakes",
-        "Lettuce"
+        "Lettuce",
+        "Celery"
       ],
       "preparation_time": "5 minutes",
-      "cooking_instructions": "Steam or thaw edamame\nTop rice cakes with lettuce\nAdd edamame on top"
+      "cooking_instructions": "Steam or thaw edamame\nTop rice cakes with lettuce and thin celery slices\nAdd edamame on top"
     },
     {
       "name": "Mango Yoghurt",
@@ -105,10 +107,11 @@
       "ingredients": [
         "Tempeh",
         "Romaine Lettuce Leaves",
-        "Rice Cakes"
+        "Rice Cakes",
+        "Bell Pepper"
       ],
       "preparation_time": "10 minutes",
-      "cooking_instructions": "Sauté tempeh with spices\nSpoon into lettuce leaves\nServe with rice cakes"
+      "cooking_instructions": "Sauté tempeh with spices\nSpoon into lettuce leaves with thinly sliced bell pepper\nServe with rice cakes"
     },
     {
       "name": "Pear Yoghurt",
@@ -156,21 +159,22 @@
         "Hummus",
         "Rice Cakes",
         "Cucumber",
-        "Fat-Free Cottage Cheese"
+        "Fat-Free Cottage Cheese",
+        "Radish"
       ],
       "preparation_time": "5 minutes",
-      "cooking_instructions": "Spread hummus on rice cakes\nAdd cucumber\nAdd cottage cheese and serve"
+      "cooking_instructions": "Spread hummus on rice cakes\nAdd cucumber and sliced radish\nAdd cottage cheese and serve"
     },
     {
-      "name": "Veggie Mexican Bowl",
+      "name": "Tempeh Mexican Bowl",
       "ingredients": [
-        "White Rice",
         "Black Beans",
-        "Guacamole",
-        "Fat-Free Cottage Cheese"
+        "Tempeh",
+        "White Rice",
+        "Guacamole"
       ],
       "preparation_time": "20 minutes",
-      "cooking_instructions": "Cook rice\nHeat black beans\nAssemble bowl with guacamole on top"
+      "cooking_instructions": "Cook white rice\nCook Tempeh\nAssemble with beans and guacamole"
     },
     {
       "name": "Tofu Poke Bowl",
@@ -178,10 +182,11 @@
         "Tofu",
         "Whole Grain Rice",
         "Cucumber",
-        "Avocado"
+        "Avocado",
+        "Zucchini"
       ],
       "preparation_time": "15 minutes",
-      "cooking_instructions": "Cube and pan-sear tofu\nCook rice\nSlice cucumber and avocado\nLayer all in a bowl"
+      "cooking_instructions": "Cube and pan-sear tofu\nCook rice\nSlice cucumber, avocado, and zucchini\nLayer all in a bowl"
     },
     {
       "name": "Potato Pizza Rounds",
@@ -247,8 +252,8 @@
     {
       "name": "Mug Cake",
       "ingredients": [
-        "Protein Powder",
-        "Gluten-Free Whole Grain Oats",
+        "Lactose-Free Protein Powder",
+        "Whole Grain Oats",
         "Lactose-Free Skim Milk"
       ],
       "preparation_time": "5 minutes",

@@ -55,20 +55,22 @@
       "ingredients": [
         "Chicken",
         "Lettuce",
-        "Bread"
+        "Bread",
+        "Celery"
       ],
       "preparation_time": "10 minutes",
-      "cooking_instructions": "Chop chicken\nMix with lettuce\nTop with salsa"
+      "cooking_instructions": "Chop chicken and celery\nMix with lettuce\nTop with salsa"
     },
     {
       "name": "Tuna Toast",
       "ingredients": [
         "Tuna",
         "Gluten-Free Bread",
-        "Lettuce"
+        "Lettuce",
+        "Radish"
       ],
       "preparation_time": "5 minutes",
-      "cooking_instructions": "Toast the bread\nSpread tuna on top\nAdd a layer of lettuce"
+      "cooking_instructions": "Toast the bread\nSpread tuna on top\nAdd a layer of lettuce and radish"
     },
     {
       "name": "Mango Yoghurt",
@@ -105,10 +107,11 @@
       "ingredients": [
         "Chicken",
         "Gluten-Free Mini-Tortilla",
-        "Lettuce"
+        "Lettuce",
+        "Bell Pepper"
       ],
       "preparation_time": "10 minutes",
-      "cooking_instructions": "Season and grill chicken\nAdd to tortilla and add lettuce"
+      "cooking_instructions": "Season and grill chicken\nAdd to tortilla with lettuce and bell pepper"
     },
     {
       "name": "Pear Yoghurt",
@@ -155,10 +158,11 @@
       "ingredients": [
         "Rice Cakes",
         "Cucumber",
-        "Turkey Breast"
+        "Turkey Breast",
+        "Spinach"
       ],
       "preparation_time": "5 minutes",
-      "cooking_instructions": "Slice cucumber\nLayer turkey and cucumber on rice cakes"
+      "cooking_instructions": "Slice cucumber\nLayer turkey, cucumber, and spinach on rice cakes"
     },
     {
       "name": "Mexican Bowl",
@@ -177,10 +181,11 @@
         "Salmon",
         "Gluten-Free Whole Grain Rice",
         "Cucumber",
-        "Avocado"
+        "Avocado",
+        "Zucchini"
       ],
       "preparation_time": "15 minutes",
-      "cooking_instructions": "Cook rice\nDice salmon, cucumber, and avocado\nArrange in bowl"
+      "cooking_instructions": "Cook rice\nDice salmon, cucumber, avocado, and zucchini\nArrange in bowl"
     },
     {
       "name": "Pizza",

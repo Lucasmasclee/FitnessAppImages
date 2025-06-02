@@ -56,10 +56,11 @@
       "ingredients": [
         "Rice Cakes",
         "Lettuce",
-        "Tofu"
+        "Tofu",
+        "Bell Pepper"
       ],
       "preparation_time": "10 minutes",
-      "cooking_instructions": "Pan-fry tofu\nPlace lettuce and tofu on rice cakes\nServe"
+      "cooking_instructions": "Pan-fry tofu\nPlace lettuce, tofu, and sliced bell pepper on rice cakes\nServe"
     },
     {
       "name": "Protein Bites",
@@ -107,10 +108,11 @@
       "ingredients": [
         "Tofu",
         "Wrap",
-        "Lettuce"
+        "Lettuce",
+        "Bell Pepper"
       ],
       "preparation_time": "10 minutes",
-      "cooking_instructions": "Pan-fry tofu\nAdd tofu and lettuce to wrap\nRoll and serve"
+      "cooking_instructions": "Pan-fry tofu\nAdd tofu, lettuce, and sliced bell pepper to wrap\nRoll and serve"
     },
     {
       "name": "Pear Yoghurt",
@@ -158,32 +160,34 @@
         "Hummus",
         "Edamame",
         "Cucumber",
-        "Rice Cakes"
+        "Rice Cakes",
+        "Radish"
       ],
       "preparation_time": "5 minutes",
-      "cooking_instructions": "Spread hummus on rice cakes\nTop with cucumber slices and edamame"
+      "cooking_instructions": "Spread hummus on rice cakes\nTop with cucumber slices, edamame, and sliced radish"
     },
     {
-      "name": "Mexican Bowl",
+      "name": "Tempeh Mexican Bowl",
       "ingredients": [
         "Black Beans",
-        "Tofu",
+        "Tempeh",
         "White Rice",
         "Guacamole"
       ],
       "preparation_time": "20 minutes",
-      "cooking_instructions": "Cook white rice\nSauté tofu\nAssemble with beans and guacamole"
+      "cooking_instructions": "Cook white rice\nCook Tempeh\nAssemble with beans and guacamole"
     },
     {
-      "name": "Poke Bowl",
+      "name": "Tofu Poke Bowl",
       "ingredients": [
         "Tofu",
         "White Rice",
         "Avocado",
-        "Cucumber"
+        "Cucumber",
+        "Radish"
       ],
       "preparation_time": "15 minutes",
-      "cooking_instructions": "Cook rice\nCube tofu and sauté or marinate\nSlice avocado and cucumber\nAssemble in bowl"
+      "cooking_instructions": "Cook rice\nCube tofu and sauté or marinate\nSlice avocado, cucumber, and radish\nAssemble in bowl"
     },
     {
       "name": "Pizza Rounds",
@@ -197,7 +201,7 @@
       "cooking_instructions": "Slice potato into rounds\nBake potato rounds until golden brown\nSeason and bake tempeh\n\nAdd tomato sauceand vegan cheese to the potato\nAdd tempeh to the rounds and bake until cheese is molten"
     },
     {
-      "name": "Chicken & Rice",
+      "name": "Tempeh & Rice",
       "ingredients": [
         "Tempeh",
         "Cauliflower Rice",
@@ -225,7 +229,7 @@
         "Raspberries"
       ],
       "preparation_time": "5 minutes",
-      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth/nAdd ice cubes and blend/nRepeat until preferred thickness"
+      "cooking_instructions": "Add all ingredients to blender\nBlend until smooth\nAdd ice cubes and blend\nRepeat until preferred thickness"
     },
     {
       "name": "Raspberry Shake",
